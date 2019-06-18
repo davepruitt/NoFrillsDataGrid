@@ -12,3 +12,7 @@ Available on NuGet
 **Xamarin.Forms (.NET Standard 2.0)**
 
 [![NuGet](https://img.shields.io/nuget/v/NoFrills.Xamarin.Forms.svg?label=NuGet)](https://www.nuget.org/packages/NoFrills.Xamarin.Forms/)
+
+## Screenshot of example
+
+![data grid screenshot](https://raw.githubusercontent.com/davepruitt/NoFrillsDataGrid/master/example_screenshot.png)
