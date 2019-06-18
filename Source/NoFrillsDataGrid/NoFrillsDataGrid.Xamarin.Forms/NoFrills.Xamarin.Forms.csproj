@@ -3,6 +3,17 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+    <PackageTags>xamarin, forms, data grid, table, xamarin.forms, android, ios</PackageTags>
+    <PackageReleaseNotes>Initial release</PackageReleaseNotes>
+    <Authors>David Pruitt</Authors>
+    <Version>0.1.1</Version>
+    <Description>This package includes a "no-frills" data grid that can be used in Xamarin Forms applications.</Description>
+    <Copyright>David Pruitt</Copyright>
+    <PackageProjectUrl>https://github.com/davepruitt/NoFrillsDataGrid</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/davepruitt/NoFrillsDataGrid/blob/master/LICENSE</PackageLicenseUrl>
+    <RepositoryUrl>https://github.com/davepruitt/NoFrillsDataGrid</RepositoryUrl>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
