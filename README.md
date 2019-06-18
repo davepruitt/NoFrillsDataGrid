@@ -15,4 +15,4 @@ Available on NuGet
 
 ## Screenshot of example
 
-![data grid screenshot](example_screenshot.png | width=250)
+![data grid screenshot](example_screenshot.png)
