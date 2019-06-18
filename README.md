@@ -15,4 +15,4 @@ Available on NuGet
 
 ## Screenshot of example
 
-![data grid screenshot](https://raw.githubusercontent.com/davepruitt/NoFrillsDataGrid/master/example_screenshot.png)
+![data grid screenshot](example_screenshot.png)
