@@ -19,7 +19,7 @@ Available on NuGet
 
 ## Code example
 
-'''csharp
+```csharp
 
 NoFrillsDataGrid g = new NoFrillsDataGrid()
 {
@@ -46,4 +46,4 @@ NoFrillsDataGridView gv = new NoFrillsDataGridView()
 
 TestScrollView.Content = gv;
             
-'''
+```
