@@ -17,7 +17,7 @@ Available on NuGet
 
 ![data grid screenshot](example_screenshot.png)
 
-## Code example
+## Code example (Xamarin Forms, C#)
 
 ```csharp
 
