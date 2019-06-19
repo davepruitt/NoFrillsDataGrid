@@ -3,7 +3,7 @@ This is a no-frills data grid control for Xamarin Forms. It uses SkiaSharp as th
 
 This is still in its early stages, and I have only made a Xamarin Forms version so far. However, since it uses SkiaSharp, porting it to Xamarin.Android and Xamarin.iOS should be extremely simple.
 
-Please see the code for usage details.
+A screenshot and a code example can be found below. Also, there is an example project in the source code.
 
 ## Install
 
