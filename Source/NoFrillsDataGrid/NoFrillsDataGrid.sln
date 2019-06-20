@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29001.49
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.645
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoFrills.Shared", "NoFrillsDataGrid.Shared\NoFrills.Shared.csproj", "{C8B320AF-582E-49B4-A399-2B4F50DC5083}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NoFrills.Shared", "NoFrillsDataGrid.Shared\NoFrills.Shared.csproj", "{C8B320AF-582E-49B4-A399-2B4F50DC5083}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NoFrills.Xamarin.Forms", "NoFrillsDataGrid.Xamarin.Forms\NoFrills.Xamarin.Forms.csproj", "{EE3E4A6D-01C0-4326-8810-68A9112550C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoFrills.Xamarin.Android", "NoFrills.Xamarin.Android\NoFrills.Xamarin.Android.csproj", "{07B677F6-B299-483A-81F8-68BF670CA172}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{EE3E4A6D-01C0-4326-8810-68A9112550C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EE3E4A6D-01C0-4326-8810-68A9112550C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EE3E4A6D-01C0-4326-8810-68A9112550C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07B677F6-B299-483A-81F8-68BF670CA172}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07B677F6-B299-483A-81F8-68BF670CA172}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07B677F6-B299-483A-81F8-68BF670CA172}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07B677F6-B299-483A-81F8-68BF670CA172}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
