@@ -22,11 +22,20 @@ namespace test_data_grid
                 DisplayHeaderRow = true,
                 Margin = 50,
                 BackgroundColor = SKColors.White,
-                TableColumnHeaders = new List<string>() { "David", "Andrea", "Eric", "Michael", "Yuko", "Tanya" },
-                TableCellData = new List<List<double>>()
+                TableColumnHeaders = new List<string>() { string.Empty, "David", "Andrea", "Eric", "Michael", "Yuko", "Tanya" },
+                TableCellData = new List<List<object>>()
                 {
-                    new List<double>() { 1, 2, 5, 5, 5, 5 },
-                    new List<double>() { 3, 4, 5, 5, 5, 5 }
+                    new List<object>() { 1, 1, 2, 3, 4, 5, 6 },
+                    new List<object>() { 2, 7, 8, 9, 10, 11, 12 },
+                    new List<object>() { "sum", 8, 10, 12, 14, 16, 18 }
+                },
+                TableCellBackgroundColorOverrides = new List<Tuple<SKRectI, SKColor>>()
+                {
+                    new Tuple<SKRectI, SKColor>(new SKRectI(0, 3, 6, 4), SKColors.SpringGreen)
+                },
+                TableCellContentTextColorOverrides = new List<Tuple<SKRectI, SKColor>>()
+                {
+                    new Tuple<SKRectI, SKColor>(new SKRectI(0, 3, 6, 4), SKColors.Blue)
                 }
             };
 
