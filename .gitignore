@@ -1,0 +1,13 @@
+Source/test_data_grid/bin/*
+Source/test_data_grid/obj/*
+Source/test_data_grid.Android/bin/*
+Source/test_data_grid.Android/obj/*
+Source/test_data_grid.iOS/bin/*
+Source/test_data_grid.iOS/obj/*
+Source/NoFrillsDataGrid/NoFrills.Xamarin.Android/bin/*
+Source/NoFrillsDataGrid/NoFrills.Xamarin.Android/obj/*
+Source/NoFrillsDataGrid/NoFrillsDataGrid.Shared/bin/*
+Source/NoFrillsDataGrid/NoFrillsDataGrid.Shared/obj/*
+Source/NoFrillsDataGrid/NoFrillsDataGrid.Xamarin.Forms/bin/*
+Source/NoFrillsDataGrid/NoFrillsDataGrid.Xamarin.Forms/obj/*
+Source/NoFrillsDataGrid/.vs/*
