@@ -25,10 +25,10 @@ namespace ExampleApplication
                 Margin = 50,
                 BackgroundColor = SKColors.White,
                 TableColumnHeaders = new List<string>() { "Column A", "Column B", "Column C", "Column D", "Column E", "Column F" },
-                TableCellData = new List<List<double>>()
+                TableCellData = new List<List<object>>()
                 {
-                    new List<double>() { 1, 2, 3, 4, 5, 6 },
-                    new List<double>() { 7, 8, 9, 10, 11, 12 }
+                    new List<object>() { 1, 2, 3, 4, 5, 6 },
+                    new List<object>() { 7, 8, 9, 10, 11, 12 }
                 }
             };
 
