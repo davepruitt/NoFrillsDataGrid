@@ -1,7 +1,7 @@
 # NoFrillsDataGrid
 This is a no-frills data grid control for Xamarin Forms. It uses SkiaSharp as the means to create and draw the data grid itself.
 
-This is still in its early stages, and I have only made a Xamarin Forms version so far. However, since it uses SkiaSharp, porting it to Xamarin.Android and Xamarin.iOS should be extremely simple.
+This is still in its early stages. Currently it works for Xamarin Forms and for Xamarin Android. Since it uses SkiaSharp to do the rendering, it can ultimately be ported to any platform that can use SkiaSharp (which is a lot of platforms). I have made the Xamarin Forms package available on Nuget, and I am working on getting the Xamarin Android package on Nuget in the near future. In the meantime, you can simply clone this repository and build the solution if you want to use the Xamarin Android package.
 
 A screenshot and a code example can be found below. Also, there is an example project in the source code.
 
