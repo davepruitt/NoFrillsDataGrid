@@ -11,17 +11,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="SkiaSharp.Views.Forms" Version="1.68.0" />
     <PackageReference Include="Xamarin.Forms" Version="4.0.0.425677" />
     <PackageReference Include="Xamarin.Essentials" Version="1.1.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="NoFrills.Shared">
-      <HintPath>..\..\NoFrills.Shared.dll</HintPath>
-    </Reference>
-    <Reference Include="NoFrills.Xamarin.Forms">
-      <HintPath>..\..\NoFrills.Xamarin.Forms.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\..\NoFrillsDataGrid.Shared\NoFrills.Shared.csproj" />
+    <ProjectReference Include="..\..\NoFrillsDataGrid.Xamarin.Forms\NoFrills.Xamarin.Forms.csproj" />
   </ItemGroup>
 </Project>

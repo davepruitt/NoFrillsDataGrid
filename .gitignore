@@ -4,6 +4,10 @@ Source/test_data_grid.Android/bin/*
 Source/test_data_grid.Android/obj/*
 Source/test_data_grid.iOS/bin/*
 Source/test_data_grid.iOS/obj/*
+Source/NoFrillsDataGrid/ExampleApplication/ExampleApplication/bin/*
+Source/NoFrillsDataGrid/ExampleApplication/ExampleApplication/obj/*
+Source/NoFrillsDataGrid/ExampleApplication/ExampleApplication.Android/bin/*
+Source/NoFrillsDataGrid/ExampleApplication/ExampleApplication.Android/obj/*
 Source/NoFrillsDataGrid/NoFrills.Xamarin.Android/bin/*
 Source/NoFrillsDataGrid/NoFrills.Xamarin.Android/obj/*
 Source/NoFrillsDataGrid/NoFrillsDataGrid.Shared/bin/*
@@ -11,9 +15,4 @@ Source/NoFrillsDataGrid/NoFrillsDataGrid.Shared/obj/*
 Source/NoFrillsDataGrid/NoFrillsDataGrid.Xamarin.Forms/bin/*
 Source/NoFrillsDataGrid/NoFrillsDataGrid.Xamarin.Forms/obj/*
 Source/NoFrillsDataGrid/.vs/*
-Source/ExampleApplication/.vs/*
-Source/ExampleApplication/ExampleApplication/ExampleApplication/bin/*
-Source/ExampleApplication/ExampleApplication/ExampleApplication/obj/*
-Source/ExampleApplication/ExampleApplication/ExampleApplication.Android/bin/*
-Source/ExampleApplication/ExampleApplication/ExampleApplication.Android/obj/*
-Source/ExampleApplication/ExampleApplication/ExampleApplication.Android/ExampleApplication.Android.csproj.user
+Source/NoFrillsDataGrid/ExampleApplication/ExampleApplication.Android/ExampleApplication.Android.csproj.user
