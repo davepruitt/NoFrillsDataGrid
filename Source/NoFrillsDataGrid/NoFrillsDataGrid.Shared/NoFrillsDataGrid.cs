@@ -157,7 +157,8 @@ namespace NoFrills.Shared
                         for (int c = 0; c < this_rect.Width; c++)
                         {
                             var col_coord = this_rect.Left + c;
-                            if (row_coord < result.GetLength(0) && col_coord < result.GetLength(1))
+                            if (row_coord >= 0 && col_coord >= 0 &&
+                                row_coord < result.GetLength(0) && col_coord < result.GetLength(1))
                             {
                                 result[row_coord, col_coord] = this_color;
                             }
@@ -182,6 +183,75 @@ namespace NoFrills.Shared
         #endregion
 
         #region Public methods
+
+        public (int, int) GetGridCoordinatesFromCanvasCoordinates(int screen_x, int screen_y)
+        {
+            int row = 0;
+            int col = 0;
+            int width = 0;
+            int height = 0;
+
+            if (TableCellData.Count > 0 && TableCellData[0].Count > 0)
+            {
+                //Figure out how many rows
+                int number_of_table_rows = TableCellData.Count;
+                if (DisplayHeaderRow)
+                {
+                    number_of_table_rows++;
+                }
+
+                //Figure out how many columns
+                int number_of_table_columns = TableCellData[0].Count;
+
+                //Verify that all columns have the same count
+                bool column_count_ok = TableCellData.All(x => x.Count == number_of_table_columns);
+                if (column_count_ok && Margin >= 0)
+                {
+                    if (FitCellSizesToLargestText)
+                    {
+                        float largest_width = GetLargestTextSize() * 1.25f;
+                        float largest_height = Math.Max(TableColumnHeaderTextSize, TableCellContentTextSize) * 1.5f;
+                        width = Convert.ToInt32((largest_width * number_of_table_columns) + (2 * Margin));
+                        height = Convert.ToInt32((largest_height * number_of_table_rows) + (2 * Margin));
+
+                        CalculatedWidth = width;
+                        CalculatedHeight = height;
+                    }
+
+                    //Account for margins
+                    float actual_display_width = width - (2 * Margin);
+                    float actual_display_height = height - (2 * Margin);
+                    float actual_top_ypos = Margin;
+                    float actual_bottom_ypos = height - Margin;
+                    float actual_left_xpos = Margin;
+                    float actual_right_xpos = width - Margin;
+
+                    float column_width = Convert.ToSingle(actual_display_width) / number_of_table_columns;
+                    float row_height = Convert.ToSingle(actual_display_height) / number_of_table_rows;
+                    float half_column_width = column_width / 2.0f;
+                    float half_row_height = row_height / 2.0f;
+
+                    float transformed_x = screen_x;
+                    float transformed_y = screen_y;
+
+                    transformed_x -= actual_left_xpos;
+                    transformed_y -= actual_top_ypos;
+                    if (DisplayHeaderRow)
+                    {
+                        transformed_y -= row_height;
+                    }
+
+                    transformed_x /= column_width;
+                    transformed_y /= row_height;
+                    transformed_x = Convert.ToSingle(Math.Floor(transformed_x));
+                    transformed_y = Convert.ToSingle(Math.Floor(transformed_y));
+                    row = Convert.ToInt32(transformed_y);
+                    col = Convert.ToInt32(transformed_x);
+                }
+            }
+
+            return (row, col);
+        }
 
         public void CalculateExpectedDimensions()
         {
