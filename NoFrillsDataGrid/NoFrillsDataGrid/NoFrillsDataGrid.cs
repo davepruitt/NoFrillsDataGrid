@@ -263,8 +263,12 @@ namespace NoFrills
             }
 
             //Figure out how many columns to draw
-            int number_of_table_columns = TableCellData[0].Count;
-
+            int number_of_table_columns = 0;
+            if (TableCellData.Count > 0)
+            {
+                number_of_table_columns = TableCellData[0].Count;
+            }
+            
             float largest_width = GetLargestTextSize() * 1.25f;
             float largest_height = Math.Max(TableColumnHeaderTextSize, TableCellContentTextSize) * 1.5f;
             CalculatedWidth = Convert.ToInt32((largest_width * number_of_table_columns) + (2 * Margin));
@@ -324,6 +328,7 @@ namespace NoFrills
                     float cell_y_center = 0;
 
                     //Draw the cell backgrounds
+                    var bg_paint = new SKPaint { Style = SKPaintStyle.StrokeAndFill, IsAntialias = true, StrokeWidth = GridLinesStrokeWidth };
                     for (int r = 0; r < number_of_table_rows; r++)
                     {
                         for (int c = 0; c < number_of_table_columns; c++)
@@ -332,18 +337,10 @@ namespace NoFrills
                             {
                                 float cell_xpos = actual_left_xpos + (column_width * c);
                                 float cell_ypos = actual_top_ypos + (row_height * r);
-
-                                using (var paint = new SKPaint()
-                                {
-                                    Style = SKPaintStyle.StrokeAndFill,
-                                    StrokeWidth = GridLinesStrokeWidth,
-                                    Color = backgrounds[r, c],
-                                    IsAntialias = true
-                                })
-                                {
-                                    canvas.DrawRect(new SKRect(cell_xpos, cell_ypos, cell_xpos + column_width,
-                                        cell_ypos + row_height), paint);
-                                }
+                                bg_paint.Color = backgrounds[r, c];
+                                
+                                canvas.DrawRect(new SKRect(cell_xpos, cell_ypos, cell_xpos + column_width,
+                                    cell_ypos + row_height), bg_paint);
                             }
                         }
                     }
@@ -481,7 +478,6 @@ namespace NoFrills
 
                         ypos += row_height;
                     }
-                    
                 }
             }
         }
