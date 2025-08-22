@@ -1,4 +1,4 @@
-﻿namespace NoFrillsDataGrid.Example
+﻿namespace NoFrills.DataGridExample
 {
     public partial class AppShell : Shell
     {

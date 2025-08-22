@@ -1,7 +1,7 @@
 ﻿using Android.App;
 using Android.Runtime;
 
-namespace NoFrillsDataGrid.Example;
+namespace NoFrills.DataGridExample;
 
 [Application]
 public class MainApplication : MauiApplication

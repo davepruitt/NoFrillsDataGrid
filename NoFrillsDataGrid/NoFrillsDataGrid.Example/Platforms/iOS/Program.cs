@@ -1,7 +1,7 @@
 ﻿using ObjCRuntime;
 using UIKit;
 
-namespace NoFrillsDataGrid.Example;
+namespace NoFrills.DataGridExample;
 
 public class Program
 {

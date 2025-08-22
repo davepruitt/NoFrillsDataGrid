@@ -1,6 +1,6 @@
 ﻿using Foundation;
 
-namespace NoFrillsDataGrid.Example;
+namespace NoFrills.DataGridExample;
 
 [Register("AppDelegate")]
 public class AppDelegate : MauiUIApplicationDelegate

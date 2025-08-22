@@ -2,7 +2,7 @@ using System;
 using Microsoft.Maui;
 using Microsoft.Maui.Hosting;
 
-namespace NoFrillsDataGrid.Example;
+namespace NoFrills.DataGridExample;
 
 class Program : MauiApplication
 {
