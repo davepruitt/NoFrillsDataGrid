@@ -11,7 +11,7 @@ Available on NuGet
 
 **.NET MAUI**
 
-[![NuGet](https://img.shields.io/nuget/v/NoFrills.Xamarin.Forms.svg?label=NuGet)](https://www.nuget.org/packages/NoFrills.Xamarin.Forms/)
+[![NuGet](https://img.shields.io/nuget/v/NoFrillsDataGrid.svg?label=NuGet)](https://www.nuget.org/packages/NoFrillsDataGrid/)
 
 ## Screenshot of example
 
