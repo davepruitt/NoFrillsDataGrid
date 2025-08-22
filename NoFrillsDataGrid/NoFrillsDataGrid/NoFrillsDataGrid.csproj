@@ -17,6 +17,14 @@
 		<TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</TargetPlatformMinVersion>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>
 		<RootNamespace>NoFrills</RootNamespace>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<Title>NoFrillsDataGrid</Title>
+		<Description>A "no frills" data grid control for .NET MAUI.</Description>
+		<Copyright>David Pruitt 2025</Copyright>
+		<PackageProjectUrl>https://github.com/davepruitt/NoFrillsDataGrid</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/davepruitt/NoFrillsDataGrid</RepositoryUrl>
+		<Authors>David Pruitt</Authors>
+		<Company />
 	</PropertyGroup>
 
 	<ItemGroup>
