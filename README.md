@@ -1,15 +1,15 @@
 # NoFrillsDataGrid
-This is a no-frills data grid control for Xamarin. It uses SkiaSharp as the means to create and draw the data grid itself.
+This is a no-frills data grid control for .NET MAUI. There is also an older package for Xamarin if you still use Xamarin. 
 
-This control is still in its early stages. The backbone of the code targets .NET Standard, and I have created projects for Xamarin Forms, Xamarin Android, and Xamarin iOS. Since it uses SkiaSharp to do the rendering, it can ultimately be ported to any platform that can use SkiaSharp (which is a lot of platforms). I have made the Xamarin Forms package available on Nuget, and I am working on getting the other packages on Nuget in the near future. In the meantime, you can simply download/clone this repository and build the solution if you want to use the Xamarin Android or Xamarin iOS package.
+This package uses SkiaSharp as the means to create and draw the data grid itself. Since it uses SkiaSharp to do the rendering, it can ultimately be ported to any platform that can use SkiaSharp (which is a lot of platforms).
 
-A screenshot and a code example for Xamarin Forms can be found below. Also, there is an example project in the source code.
+A screenshot and a code example can be found below. Also, there is an example project in the source code.
 
 ## Install
 
 Available on NuGet
 
-**Xamarin.Forms (.NET Standard 2.0)**
+**.NET MAUI**
 
 [![NuGet](https://img.shields.io/nuget/v/NoFrills.Xamarin.Forms.svg?label=NuGet)](https://www.nuget.org/packages/NoFrills.Xamarin.Forms/)
 
@@ -17,7 +17,7 @@ Available on NuGet
 
 ![data grid screenshot](example_screenshot.png)
 
-## Code example (Xamarin Forms, C#)
+## Code example
 
 ```csharp
 
