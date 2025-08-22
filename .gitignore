@@ -18,3 +18,9 @@ Source/NoFrillsDataGrid/.vs/*
 Source/NoFrillsDataGrid/ExampleApplication/ExampleApplication.Android/ExampleApplication.Android.csproj.user
 Source/NoFrillsDataGrid/NoFrills.Xamarin.iOS/bin/*
 Source/NoFrillsDataGrid/NoFrills.Xamarin.iOS/obj/*
+Source_Old/NoFrillsDataGrid/packages/
+NoFrillsDataGrid/NoFrillsDataGrid/obj/
+NoFrillsDataGrid/.vs/
+NoFrillsDataGrid/NoFrillsDataGrid.Example/obj/
+NoFrillsDataGrid/NoFrillsDataGrid.Example/bin/
+NoFrillsDataGrid/NoFrillsDataGrid/bin/
